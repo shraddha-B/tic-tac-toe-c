@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe (2019 Turbo C Edition)</title>
+    <link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css">
+    <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        #dos {
+            width: 800px;
+            height: 600px;
+            max-width: 95vw;
+            border: 2px solid #444;
+            border-radius: 6px;
+        }
+        .controls {
+            margin-top: 15px;
+            color: #cccccc;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tic Tac Toe — Classic C Graphics Game (2019)</h2>
+    <div id="dos"></div>
+    <div class="controls">
+        <strong>Controls:</strong> Click inside the screen to enable sound • Keys <b>1–9</b> to place mark • <b>Q</b> to quit • <b>Esc</b> to exit
+    </div>
+
+    <script>
+        Dos(document.getElementById("dos"), {
+            url: "./game.jsdos",
+        });
+    </script>
+</body>
+</html>
